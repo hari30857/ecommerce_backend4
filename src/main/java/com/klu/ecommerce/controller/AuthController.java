@@ -29,4 +29,9 @@ public class AuthController {
         String password = request.get("password");
         return ResponseEntity.ok(userService.loginUser(username, password));
     }
+    
+    @GetMapping("/")
+    public String home() {
+    	return "home";
+    	}
 }
