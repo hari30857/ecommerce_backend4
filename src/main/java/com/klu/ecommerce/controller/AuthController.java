@@ -30,7 +30,7 @@ public class AuthController {
         return ResponseEntity.ok(userService.loginUser(username, password));
     }
     
-    @GetMapping("/")
+    @GetMapping("/home")
     public String home() {
     	return "home";
     	}
